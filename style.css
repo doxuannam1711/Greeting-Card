@@ -1,0 +1,96 @@
+*{
+    margin:0px;
+    Padding:0px;
+}
+body {
+   background:linear-gradient(to top left,#00BE7E,#00A9D4); 
+   width:100%;
+   height:100vh;
+   Align-items:center;
+   Justify-content:center;
+   Display:flex;     
+   animation: change-color 6s infinite linear;
+}
+@keyframes change-color{
+    0%{background:linear-gradient(to top left,#00BE7E,#00A9D4) ;}
+    25%{background:linear-gradient(to top left,#b5bdba,#3ddf0c) ;}
+    50%{background:linear-gradient(to top left,#d4c2cb,#e45ea1) ;}
+    100%{background:linear-gradient(to top left,#cec5c2,#d4c600) ;}
+}
+.card{
+    Position:relative;
+    width:190px;
+    Background-color:#FF3D68;
+    height:290px;
+    box-shadow:5px 5px 25px rgba(0,0,0,0.4);
+    Transform-style:preserve-3d;
+    transform:perspective(1000px);  
+    transition:2s;      
+}
+.wishes{
+    width:100%;
+    height:100%;
+    Position:absolute;
+    top:0;
+    left:0;
+    Padding:5px 5px 5px 5px;
+    line-height:25px;
+    Text-align:center;
+    Display:flex;
+    Justify-content:center;
+    Align-items:center;
+    letter-spacing:1px;
+    
+    
+    
+}
+.text{
+    width:180px;
+    line-height:20px;
+     
+}
+H3{
+    color:red;
+    Position:relative;
+     top:-20px;
+     font-family: 'Girassol', cursive;
+}
+P{
+   font-family: 'Itim', cursive;
+
+ 
+}
+.card .images{
+    Position:relative;
+    width:100%;
+    height:100%;
+    Transform:1s;
+    Z-index:2000;
+    Transform-origin:left;
+    Transform-style:preserve-3d;
+    
+    background-color:black;
+    transition:2s;
+    
+}
+.card .images Img{
+    width:100%;
+    height:100%;
+    position:absolute;
+    top:0px;
+    left:0px;
+    Transform-style:preserve-3d;
+   
+    
+    
+}
+Img:nth-child(2){
+    Transform:rotatey(180deg);
+    box-shadow:0px 4px 25px rgba(0,0,0,0.4);
+}
+.card:hover .images{
+    Transform:rotatey(-180deg);
+}
+.card:hover{
+    Transform:rotate(-10deg) translatex(80px);
+}
