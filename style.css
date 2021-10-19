@@ -3,7 +3,9 @@
     Padding:0px;
 }
 body {
-   background:linear-gradient(to top left,#00BE7E,#00A9D4); 
+   
+   background:linear-gradient(to top left,#00BE7E,#00A9D4);
+   background-repeat: no-repeat;
    width:100%;
    height:100vh;
    Align-items:center;
